@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css'
 interface Props {
     title : string,
     subtitle: string,
@@ -15,7 +16,7 @@ const {title, subtitle} = Astro.props
     <title>{title} | {subtitle}</title>
 </head>
 <body>
-    <h1 class="bg-yellow-500">{subtitle}</h1>
+    <h1 class="subtitle">{subtitle}</h1>
     <slot/>
 </body>
 </html>
